@@ -14,7 +14,7 @@ import { SiTailwindcss, SiMongodb, SiExpress, SiPostman, SiNextdotjs } from "rea
 import { IoLogoJavascript } from "react-icons/io5";
 import { FcGraduationCap } from "react-icons/fc";
 import { BiAtom } from "react-icons/bi";
-import { Briefcase } from "lucide-react";
+import { Briefcase, CheckCircle, X } from "lucide-react";
 import { FaGraduationCap } from "react-icons/fa";
 import { Heart, Layout, Wind } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
@@ -58,7 +58,7 @@ export default function Home() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/mdmaruf20053@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/ahmeddulal4211@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -88,21 +88,21 @@ export default function Home() {
       hex: "#e11d48",
       tech: ["React", "Next.js", "MongoDB", "Better-Auth", "Google-Auth", "HeroUI"],
       icon: <Layout className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/skillSphere-online-platform",
-      live: "https://skill-sphere-online-platform.vercel.app/",
+      repo: "https://github.com/dulal71/skillSphere",
+      live: "https://skill-sphere-bwih.vercel.app/",
       desc: "A sophisticated online learning platform with secure authentication and a modern dashboard for managing courses and skills.",
-      image: ""
+      image: "/project-1.png"
     },
     {
-      title: "Products Haven Next.js",
+      title: "The Dragon News",
       color: "purple-500",
       hex: "#a855f7",
-      tech: ["Next.js", "Tailwind", "React", "Shadcn UI"],
+      tech: ["Next.js", "Tailwind", "React", "Better-Auth",'Hero UI'],
       icon: <FaAtom className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/products-haven-next.js",
-      live: "https://products-haven-next-js.vercel.app/",
+      repo: "https://github.com/dulal71/dragon-news-portal",
+      live: "https://dragon-news-portal-one.vercel.app/category/01",
       desc: "A premium e-commerce accessories store built with Next.js, featuring a sleek purple aesthetic and high-end product displays.",
-      image: ""
+      image: "/project-2.png"
     },
     {
       title: "DigiTools",
@@ -110,10 +110,10 @@ export default function Home() {
       hex: "#7c3aed",
       tech: ["React", "Tailwind CSS", "DaisyUI", "Lucide React"],
       icon: <Wind className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/DigiTool-React-Project-A6",
-      live: "https://digitools-inventory.netlify.app/",
+      repo: "https://github.com/dulal71/digitools-platform",
+      live: "https://digitools-platform-delta.vercel.app/",
       desc: "A powerful platform to supercharge your digital workflow with premium AI tools, design assets, and productivity software.",
-      image: ""
+      image: "/project-4.png"
     }
     ,
     {
@@ -122,21 +122,10 @@ export default function Home() {
       hex: "#10b981",
       tech: ["React", "Tailwind CSS", "Lucide React", "DaisyUI"],
       icon: <Heart className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/keepkepper-asssignment-7",
-      live: "https://kin-kepper.vercel.app/",
+      repo: "https://github.com/dulal71/keen-keeper",
+      live: "https://keen-keeper-pied-three.vercel.app/",
       desc: "A personal shelf of meaningful connections to browse, tend, and nurture the relationships that matter most.",
-      image: ""
-    },
-    {
-      title: "My Food Recipes App",
-      color: "blue-500",
-      hex: "#3b82f6",
-      tech: ["React", "DaisyUI", "Tailwind"],
-      icon: <Wind className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/my-food-react-project",
-      live: "https://myfood-product.netlify.app/",
-      desc: "A vibrant and appetizing food product application featuring high-quality recipes and a responsive, user-friendly interface.",
-      image: ""
+      image: "/project-3.png"
     },
     {
       title: "English Janala Web App",
@@ -144,10 +133,10 @@ export default function Home() {
       hex: "#a855f7",
       tech: ["Tailwind", "Vanilla JS", "DaisyUI"],
       icon: <BiAtom className="w-5 h-5 text-white" />,
-      repo: "https://github.com/Abdhullah-Al-Maruf/English-janala-web-app",
-      live: "https://abdhullah-al-maruf.github.io/English-janala-web-app/",
+      repo: "https://github.com/dulal71/english-janala",
+      live: "https://english-janala-seven.vercel.app/",
       desc: "A clean and modern vocabulary learning application designed to help users master English words through an interactive UI.",
-      image: ""
+      image: "/project-5.png"
     }
 
   ];
@@ -322,7 +311,7 @@ export default function Home() {
 
         {/* Foreground Content */}
         <div className="relative z-10 flex flex-col items-center">
-          <div className="loader-counter text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br from-brand-orange via-brand-red to-purple-600 drop-shadow-[0_0_30px_rgba(225,29,72,0.4)] mb-2">
+          <div className="loader-counter text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-linear-to-br from-brand-blue via-brand-blue-600 to-blue-900 drop-shadow-[0_0_30px_rgba(225,29,72,0.4)] mb-2">
             0%
           </div>
 
@@ -333,7 +322,7 @@ export default function Home() {
           </div>
 
           <div className="w-64 md:w-96 h-[2px] bg-white/5 rounded-full overflow-hidden relative">
-            <div className="loader-progress absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-brand-orange via-brand-red to-purple-600 shadow-[0_0_20px_rgba(225,29,72,0.8)]"></div>
+            <div className="loader-progress absolute top-0 left-0 h-full w-0 bg-linear-to-r from-brand-orange via-brand-red to-purple-600 shadow-[0_0_20px_rgba(225,29,72,0.8)]"></div>
           </div>
         </div>
       </div>
@@ -342,7 +331,7 @@ export default function Home() {
 
       {/* Ultra Glassy Background Elements with Parallax classes */}
       <div className="fixed inset-0 top-0 hero-bg -z-20 opacity-40"></div>
-      <div className="bg-orb-1 fixed top-1/4 left-1/4 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-brand-red/10 rounded-full blur-[100px] md:blur-[150px] -z-10 animate-glow-pulse pointer-events-none"></div>
+      <div className="bg-orb-1 fixed top-1/4 left-1/4 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-brand-blue/10 rounded-full blur-[100px] md:blur-[150px] -z-10 animate-glow-pulse pointer-events-none"></div>
       <div className="bg-orb-2 fixed bottom-1/4 right-1/4 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-brand-orange/5 rounded-full blur-[100px] md:blur-[150px] -z-10 animate-glow-pulse pointer-events-none delay-1000"></div>
 
       <main className="max-w-7xl mx-auto px-6 pt-48 pb-24 relative z-10 overflow-hidden">
@@ -355,15 +344,14 @@ export default function Home() {
             MERN STACK DEVELOPER
           </h2>
           <p className="hero-desc text-gray-300 max-w-xl mx-auto mt-4 text-sm md:text-base leading-relaxed bg-white/5 p-5 rounded-3xl backdrop-blur-md border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
-            I am a driven and passionate MERN Stack Developer with a strong foundation in building scalable and performant
-            web applications.
+           I am a passionate MERN Stack Developer focused on building scalable, high-performance web applications with clean architecture and modern user experiences. I turn ideas into fast, reliable, and impactful digital products.
           </p>
           <div className="hero-buttons flex gap-5 justify-center pt-8">
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#"
-              className="bg-brand-red/80 backdrop-blur-xl hover:bg-brand-red text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(225,29,72,0.4)] hover:shadow-[0_0_30px_rgba(225,29,72,0.7)] border border-white/20"
+              className="bg-brand-red/80 backdrop-blur-xl hover:bg-brand-blue text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,1)] border border-white/20"
             >
               Resume
             </motion.a>
@@ -388,7 +376,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-14 h-14 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center hover:bg-white/20 text-gray-400 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
+                className="w-14 h-14 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center hover:bg-white/20 hover:shadow-[0_0_30px_rgba(59,130,246,1)] text-gray-400 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
               >
                 <Icon className="w-6 h-6" />
               </motion.a>
@@ -405,21 +393,26 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row items-center gap-12 justify-center bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-[2.5rem] shadow-[0_8px_32px_rgba(0,0,0,0.3)] relative overflow-hidden group hover:border-white/20 transition-all duration-500">
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="flex-1 text-gray-300 space-y-4 text-sm leading-relaxed border-l-2 border-brand-orange/50 pl-6 max-w-lg relative z-10">
-              <p>I am a driven and passionate Full Stack Developer with experience in building scalable web applications. I
-                love turning complex problems into elegant solutions.</p>
-              <p>My journey in web development started with a curiosity for how things work, and it has evolved into a
-                career where I build solutions that make a real impact.</p>
-              <p>When I &apos; m not coding, you can find me exploring new technologies, contributing to open-source projects, or
-                enjoying a good cup of coffee.</p>
+            <div className="flex-1 text-gray-300 space-y-4 text-sm leading-relaxed border-l-2  border-[rgb(59,130,246)] pl-6 max-w-lg relative z-10">
+             <p>
+I am a passionate Full Stack Developer focused on building scalable and high-performance web applications. I enjoy transforming complex problems into simple, clean, and effective solutions.
+</p>
+
+<p>
+My journey in web development started with curiosity about how things work behind the screen, and it has grown into a career where I build meaningful digital products that create real impact.
+</p>
+
+<p>
+Outside of coding, I love exploring new technologies, contributing to open-source projects, and continuously improving my skills. I also enjoy a good cup of coffee while thinking about new ideas.
+</p>
             </div>
             <div className="flex-shrink-0 relative z-10">
               <motion.div
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                className="avatar-wrapper shadow-[0_0_30px_rgba(225,29,72,0.3)]"
+                className="avatar-wrapper shadow-[0_0_30px_rgba(59,130,246,1)]"
               >
                 <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-black/50 backdrop-blur-md border-4 border-white/10 relative">
-                  <Image src={''} alt="Profile" fill priority unoptimized
+                  <Image src='/image.jpeg' alt="Profile" fill priority unoptimized
                     className="object-cover object-top" />
                 </div>
               </motion.div>
@@ -451,7 +444,7 @@ export default function Home() {
                 <motion.div
                   key={idx}
                   whileHover={{ y: -5, scale: 1.05 }}
-                  className="skill-item flex flex-col items-center gap-3 bg-white/5 hover:bg-white/10 p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.1)]"
+                  className="skill-item flex flex-col items-center gap-3 bg-white/5  p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
                 >
                   <div className="w-12 h-12 flex items-center justify-center drop-shadow-lg">
                     {skill.icon}
@@ -474,7 +467,7 @@ export default function Home() {
                 <motion.div
                   key={idx}
                   whileHover={{ y: -5, scale: 1.05 }}
-                  className="skill-item flex flex-col items-center gap-3 bg-white/5 hover:bg-white/10 p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.1)]"
+                  className="skill-item flex flex-col items-center gap-3 bg-white/5 hover:bg-white/10 p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
                 >
                   <div className="w-12 h-12 flex items-center justify-center drop-shadow-lg">
                     {skill.icon}
@@ -639,16 +632,16 @@ export default function Home() {
             {/* Education Items */}
             {[
               {
-                degree: "Computer Science And Technology",
-                school: "Feni Polytechnic Institute",
-                year: "2023 - 2026",
+                degree: "Mathematics",
+                school: "National University",
+                year: "2023 - 2027",
                 hex: "#3b82f6",
                 icon: <FcGraduationCap  className="w-4 h-4 text-white" />,
                 desc: "Studying core computer science subjects including programming, database systems, networking, and software development."
               },
               {
-                degree: "SSC",
-                school: "Shah Helal High School",
+                degree: "HSC",
+                school: "Moulvibazar Grovt College",
                 year: "2017 - 2022",
                 hex: "#a855f7",
                 icon: <FcGraduationCap className="w-4 h-4 text-white" />,
@@ -699,8 +692,8 @@ export default function Home() {
           <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-8">
             <div className="md:col-span-2 space-y-6">
               {[
-                { label: "Email", val: "mdmaruf20053@gmail.com", icon: <Mail className="w-7 h-7 text-brand-red" /> },
-                { label: "Location", val: "Bangladesh,Feni", icon: <MapPin className="w-7 h-7 text-brand-red" /> }
+                { label: "Email", val: "ahmeddulal4211@gmail.com", icon: <Mail className="w-7 h-7 text-brand-red" /> },
+                { label: "Location", val: "Bangladesh,Sylhet,Moulvibazar", icon: <MapPin className="w-7 h-7 text-brand-red" /> }
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
