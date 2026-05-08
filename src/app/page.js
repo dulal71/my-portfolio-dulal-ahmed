@@ -58,7 +58,7 @@ export default function Home() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/ahmeddulal4211@gmail.com", {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSUBMIT_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -741,20 +741,20 @@ Outside of coding, I love exploring new technologies, contributing to open-sourc
                 <div className="relative z-10 grid grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs text-gray-300 uppercase tracking-widest font-bold ml-1">First Name</label>
-                    <input type="text" name="First Name" placeholder="John" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:border-brand-red/80 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(225,29,72,0.2)] placeholder:text-gray-600" />
+                    <input type="text" name="First Name" placeholder="John" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:border-brand-blue/20 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(59,130,246,1)] placeholder:text-gray-600" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-xs text-gray-300 uppercase tracking-widest font-bold ml-1">Last Name</label>
-                    <input type="text" name="Last Name" placeholder="Doe" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:border-brand-red/80 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(225,29,72,0.2)] placeholder:text-gray-600" />
+                    <input type="text" name="Last Name" placeholder="Doe" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:border-brand-blue/20 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(59,130,246,1)] placeholder:text-gray-600" />
                   </div>
                 </div>
                 <div className="relative z-10 space-y-2">
                   <label className="text-xs text-gray-300 uppercase tracking-widest font-bold ml-1">Email</label>
-                  <input type="email" name="email" placeholder="john@example.com" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:border-brand-red/80 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(225,29,72,0.2)] placeholder:text-gray-600" />
+                  <input type="email" name="email" placeholder="john@example.com" required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all focus:outline-none focus:focus:border-brand-blue/20 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(59,130,246,1)] placeholder:text-gray-600" />
                 </div>
                 <div className="relative z-10 space-y-2">
                   <label className="text-xs text-gray-300 uppercase tracking-widest font-bold ml-1">Message</label>
-                  <textarea name="message" placeholder="Tell me about your project..." rows={5} required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all resize-none focus:outline-none focus:border-brand-red/80 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(225,29,72,0.2)] placeholder:text-gray-600"></textarea>
+                  <textarea name="message" placeholder="Tell me about your project..." rows={5} required className="w-full bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-sm text-white transition-all resize-none focus:outline-none focus:border-brand-blue/20 focus:bg-white/10 focus:shadow-[0_0_20px_rgba(59,130,246,1)] placeholder:text-gray-600"></textarea>
                 </div>
                 <motion.button
                   whileHover={{ scale: 1.02 }}
