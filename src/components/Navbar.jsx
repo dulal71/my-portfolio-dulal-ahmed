@@ -6,6 +6,8 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLenis } from "lenis/react";
 
+
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -83,8 +85,7 @@ export function Navbar() {
             href="#home"
             scroll={false}
             onClick={() => setActiveTab("#home")}
-            className="font-extrabold text-xl tracking-widest text-white"
-          >
+            className='font-extrabold text-xl tracking-widest  bg-linear-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent'>
             PORTFOLIO<span className="text-red-500">.</span>
           </Link>
 

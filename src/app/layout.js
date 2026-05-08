@@ -3,7 +3,7 @@ import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { CustomCursor } from "@/components/CustomCursor";
 
-const inter = Inter({ subsets: ["latin"] });
+ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dulal Ahmed | MERN Stack Developer | Full Stack Web Developer",
