@@ -1,2 +1,69 @@
 @import "tailwindcss";
 
+/* ── Base Styles ── */
+@layer base {
+  body {
+    background-color: #030303;
+    color: #e5e5e5;
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+/* ── Custom CSS Variables ── */
+:root {
+  --brand-red: #e11d48;
+  --brand-orange: #f97316;
+  --brand-dark: #030303;
+}
+
+/* ── Animations ── */
+@keyframes glowPulse {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) scale(1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e11d48;
+}
+
+/* ── Focus ── */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #e11d48;
+  box-shadow: 0 0 0 1px rgba(225, 29, 72, 0.3);
+}
+
+/* ── Lenis ── */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
