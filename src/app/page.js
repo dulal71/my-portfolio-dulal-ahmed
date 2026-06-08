@@ -82,6 +82,17 @@ export default function Home() {
   };
 
   const projects = [
+     {
+      title: "Doctor Appointment Manager",
+      color: "brand-red",
+      hex: "#e11d48",
+      tech: [ "Next.js","Tailwind CSS", "MongoDB","Node.js","Express.js", "Better-Auth",  "HeroUI"],
+      icon: <Layout className="w-5 h-5 text-white" />,
+      repo: "https://github.com/dulal71/doctor-appointment-manager",
+      live: "https://doctor-appointment-manager-six.vercel.app/",
+      desc: "A modern full-stack Doctor Appointment web application where users can easily book appointments, manage schedules, and securely authenticate using Google login.",
+      image: "/project.png"
+    },
     {
       title: "SkillSphere Online Platform",
       color: "brand-red",
