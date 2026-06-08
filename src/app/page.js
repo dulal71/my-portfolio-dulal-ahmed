@@ -358,14 +358,16 @@ export default function Home() {
            I am a passionate MERN Stack Developer focused on building scalable, high-performance web applications with clean architecture and modern user experiences. I turn ideas into fast, reliable, and impactful digital products.
           </p>
           <div className="hero-buttons flex gap-5 justify-center pt-8">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="#"
-              className="bg-brand-red/80 backdrop-blur-xl hover:bg-brand-blue text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,1)] border border-white/20"
-            >
-              Resume
-            </motion.a>
+           <motion.a
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  href="/dulal-ahmed-fullstack-resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-brand-red/80 backdrop-blur-xl hover:bg-brand-blue text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,1)] border border-white/20"
+>
+  Resume
+</motion.a>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -473,7 +475,7 @@ Outside of coding, I love exploring new technologies, contributing to open-sourc
                 { icon: <SiMongodb className="w-7 h-7 text-[#47A248]" />, name: 'MongoDB' },
                 { icon: <SiExpress className="w-7 h-7 text-gray-300" />, name: 'Express' },
                 { icon: <FaGithub className="w-7 h-7 text-white" />, name: 'Git/GitHub' },
-                { icon: <SiPostman className="w-7 h-7 text-[#FF6C37]" />, name: 'Postman' },
+
               ].map((skill, idx) => (
                 <motion.div
                   key={idx}
@@ -590,19 +592,12 @@ Outside of coding, I love exploring new technologies, contributing to open-sourc
               {
                 role: "Full Stack MERN Developer",
                 comp: "Self Projects",
-                year: "2024 - Present",
+                year: "2026 - Present",
                 hex: "#e11d48",
                 icon: <Briefcase className="w-4 h-4 text-white" />,
                 desc: "Built multiple full-stack web applications using MongoDB, Express.js, React, and Node.js. Implemented authentication, REST APIs, and responsive UI design."
               },
-              {
-                role: "Programming Mentor",
-                comp: "Fpi Computer Club",
-                year: "2025 - Present",
-                hex: "#f97316",
-                icon: <Briefcase className="w-4 h-4 text-white" />,
-                desc: "Helping students understand programming fundamentals and guiding beginners in web development concepts and problem solving."
-              }
+             
             ].map((exp, idx) => (
               <motion.div
                 key={idx}
@@ -661,7 +656,7 @@ Outside of coding, I love exploring new technologies, contributing to open-sourc
               {
                 degree: "MERN Stack Development",
                 school: "Programming Hero",
-                year: "2025 - 2026",
+                year: "2026 - present",
                 hex: "#22c55e",
                 icon: <FaGraduationCap className="w-4 h-4 text-white" />,
                 desc: "Completed structured training in full-stack web development using React, Node.js, Express, and MongoDB. Built real-world projects."
