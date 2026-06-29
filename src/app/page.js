@@ -82,6 +82,17 @@ export default function Home() {
   };
 
   const projects = [
+    {
+      title: "Blood Bridge Donation Network",
+      color: "brand-red",
+      hex: "#e11d48",
+      tech: [ "Next.js","Tailwind CSS", "MongoDB","Node.js","Express.js", "Better-Auth",  "HeroUI","Gemini AI"],
+      icon: <Layout className="w-5 h-5 text-white" />,
+      repo: "https://github.com/dulal71/blood-donation-client",
+      live: "https://blood-donation-client-pi.vercel.app/",
+      desc: " A scalable healthcare platform designed to streamline emergency blood donation, featuring robust session-based security and real-time coordination for life-saving support. ",
+      image: "/blood-donation-project.png"
+    },
      {
       title: "Doctor Appointment Manager",
       color: "brand-red",
