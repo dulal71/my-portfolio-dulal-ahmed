@@ -82,6 +82,17 @@ export default function Home() {
   };
 
   const projects = [
+     {
+      title: "Nexora-Shopping-Platform",
+      color: "blue-500",
+      hex: " #3F72AF",
+      tech: [ "Next.js","TypeScript","Tailwind CSS", "MongoDB","Node.js","Express.js", "Better-Auth",  "HeroUI","Gemini AI"],
+      icon: <Layout className="w-5 h-5 text-white" />,
+      repo: "https://github.com/dulal71/nexora",
+      live: "https://nexora-mocha-theta.vercel.app/",
+      desc: " A modern full-stack e-commerce web application built with Next.js, TypeScript, Express.js, and MongoDB. The platform provides a secure shopping experience with authentication, product management, cart, wishlist, online payments, and an admin dashboard. ",
+      image: "/nexora-shopping-platform.png"
+    },
     {
       title: "Blood Bridge Donation Network",
       color: "brand-red",
