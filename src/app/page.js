@@ -22,6 +22,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
 
 const socialLinks = [
   {
@@ -32,10 +33,7 @@ const socialLinks = [
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/dulalahmed2026"
   },
-  {
-    icon: FaXTwitter,
-    url: "#"
-  }
+  
 ];
 const colorMap = {
   'brand-red': '#e11d48',
@@ -369,55 +367,7 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto px-6 pt-48 pb-24 relative z-10 overflow-hidden">
         {/* Hero */}
-        <section id="home" className="text-center space-y-6 mb-40 flex flex-col items-center">
-          <h1 className="hero-title text-5xl md:text-7xl font-extrabold tracking-tight text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-            Dulal Ahmed
-          </h1>
-          <h2 className="hero-subtitle text-2xl md:text-3xl font-bold tracking-widest uppercase bg-gradient-to-r from-gray-100 to-gray-500 bg-clip-text text-transparent drop-shadow-md">
-            MERN STACK DEVELOPER
-          </h2>
-          <p className="hero-desc text-gray-300 max-w-xl mx-auto mt-4 text-sm md:text-base leading-relaxed bg-white/5 p-5 rounded-3xl backdrop-blur-md border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
-           I am a passionate MERN Stack Developer focused on building scalable, high-performance web applications with clean architecture and modern user experiences. I turn ideas into fast, reliable, and impactful digital products.
-          </p>
-          <div className="hero-buttons flex gap-5 justify-center pt-8">
-           <motion.a
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  href="/dulal-ahmed-fullstack-resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="bg-brand-red/80 backdrop-blur-xl hover:bg-brand-blue text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,1)] border border-white/20"
->
-  Resume
-</motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="#projects"
-              className="bg-white/5 backdrop-blur-xl border border-white/20 hover:bg-white/10 hover:border-white/40 text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(255,255,255,0.1)]"
-            >
-              Projects
-            </motion.a>
-          </div>
-
-
-
-          <div className="flex justify-center gap-5 pt-4">
-            {socialLinks.map(({ icon: Icon, url }, idx) => (
-              <motion.a
-                key={idx}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="w-14 h-14 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center hover:bg-white/20 hover:shadow-[0_0_30px_rgba(59,130,246,1)] text-gray-400 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
-              >
-                <Icon className="w-6 h-6" />
-              </motion.a>
-            ))}
-          </div>
-        </section>
+        <Hero socialLinks={socialLinks}></Hero>
 
         {/* About Me */}
         <section id="about" className="reveal-section mb-40 pt-10 scroll-mt-20">
