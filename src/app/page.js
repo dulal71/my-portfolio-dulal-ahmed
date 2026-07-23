@@ -23,6 +23,7 @@ import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import About from "@/components/About";
 
 const socialLinks = [
   {
@@ -370,40 +371,7 @@ export default function Home() {
         <Hero socialLinks={socialLinks}></Hero>
 
         {/* About Me */}
-        <section id="about" className="reveal-section mb-40 pt-10 scroll-mt-20">
-          <div className="text-center mb-12">
-            <h2 className="text-brand-orange text-2xl font-bold uppercase tracking-widest drop-shadow-[0_0_10px_rgba(249,115,22,0.3)]">About Me</h2>
-            <p className="text-gray-400 text-sm mt-1">Get to know me better</p>
-          </div>
-
-          <div className="flex flex-col md:flex-row items-center gap-12 justify-center bg-white/5 backdrop-blur-2xl border border-white/10 p-10 rounded-[2.5rem] shadow-[0_8px_32px_rgba(0,0,0,0.3)] relative overflow-hidden group hover:border-white/20 transition-all duration-500">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="flex-1 text-gray-300 space-y-4 text-sm leading-relaxed border-l-2  border-[rgb(59,130,246)] pl-6 max-w-lg relative z-10">
-             <p>
-I am a passionate Full Stack Developer focused on building scalable and high-performance web applications. I enjoy transforming complex problems into simple, clean, and effective solutions.
-</p>
-
-<p>
-My journey in web development started with curiosity about how things work behind the screen, and it has grown into a career where I build meaningful digital products that create real impact.
-</p>
-
-<p>
-Outside of coding, I love exploring new technologies, contributing to open-source projects, and continuously improving my skills. I also enjoy a good cup of coffee while thinking about new ideas.
-</p>
-            </div>
-            <div className="flex-shrink-0 relative z-10">
-              <motion.div
-                whileHover={{ scale: 1.05, rotate: 2 }}
-                className="avatar-wrapper shadow-[0_0_30px_rgba(59,130,246,1)]"
-              >
-                <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden bg-black/50 backdrop-blur-md border-4 border-white/10 relative">
-                  <Image src='/image.jpeg' alt="Profile" fill priority unoptimized
-                    className="object-cover object-top" />
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+       <About></About> 
 
         {/* Skills */}
         <section id="skills" className="reveal-section mb-40 pt-10 scroll-mt-20 text-center">
