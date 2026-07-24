@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+}
+
 /* ── Base Styles ── */
 @layer base {
   body {
     background-color: #030303;
     color: #e5e5e5;
-    font-family: Inter, system-ui, sans-serif;
+    font-family: var(--font-inter);
   }
 }
-
 /* ── Custom CSS Variables ── */
 :root {
   --brand-red: #e11d48;

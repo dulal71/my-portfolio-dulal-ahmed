@@ -6,35 +6,16 @@ import {
   FiCode,
   FiTarget,
   FiTrendingUp,
+  FiActivity,
 } from "react-icons/fi";
-
-const features = [
-  {
-    icon: <FiCode className="w-6 h-6 text-blue-400" />,
-    title: "Clean Code",
-    description:
-      "I focus on writing clean, maintainable, and scalable code by following modern development best practices.",
-  },
-  {
-    icon: <FiTarget className="w-6 h-6 text-cyan-400" />,
-    title: "Problem Solving",
-    description:
-      "I enjoy turning ideas and real-world challenges into practical, user-friendly web applications.",
-  },
-  {
-    icon: <FiTrendingUp className="w-6 h-6 text-sky-400" />,
-    title: "Continuous Growth",
-    description:
-      "I'm always learning new technologies and improving my skills through real-world projects and hands-on experience.",
-  },
-];
 
 const About = () => {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto  md:px-10 py-24"
+      className="max-w-7xl mx-auto md:px-10 py-24"
     >
+      
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -57,93 +38,101 @@ const About = () => {
         </p>
       </motion.div>
 
-      {/* Content */}
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
-        {/* Left */}
+      {/* Grid container for separated sections */}
+      <div className="grid md:grid-cols-2 gap-8">
+        
+        {/* 1. Introduction Card */}
         <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-5 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+          transition={{ duration: 0.5 }}
+          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
         >
-          {/* Background Glow */}
-          <div className="absolute -top-28 -right-24 w-64 h-64 rounded-full bg-blue-500/20 blur-[120px]" />
-          <div className="absolute -bottom-24 -left-20 w-64 h-64 rounded-full bg-cyan-500/10 blur-[120px]" />
-
+          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-blue-500/10 blur-[100px]" />
           <div className="relative z-10">
-            <div className="w-16 h-16 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(59,130,246,0.35)]">
-              <FiUser className="w-8 h-8 text-blue-400" />
+            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+              <FiUser className="w-7 h-7 text-blue-400" />
             </div>
-
-            <h3 className="text-3xl font-bold text-white mb-6">
+            <h3 className="text-2xl font-bold text-white mb-4">
               Hello, I'm Dulal Ahmed
             </h3>
-
-            <div className="space-y-6 text-gray-300 leading-8">
-              <p>
-                I'm a{" "}
-                <span className="text-blue-400 font-semibold">
-                  Full Stack Developer
-                </span>{" "}
-                who enjoys building modern web applications that solve
-                real-world problems. I believe great software combines clean
-                code, performance, and an intuitive user experience.
-              </p>
-
-              <p>
-                I love transforming ideas into production-ready applications,
-                continuously improving my development skills, and exploring new
-                technologies through hands-on projects.
-              </p>
-
-              <p>
-                My goal is to contribute to impactful products, collaborate with
-                talented teams, and grow into a skilled software engineer while
-                creating applications that make a difference.
-              </p>
-            </div>
+            <p className="text-gray-300 leading-8">
+              I'm a dedicated{" "}
+              <span className="text-blue-400 font-semibold">
+                Full Stack / MERN Developer
+              </span>{" "}
+              who loves crafting modern web applications. I specialize in building smooth, user-friendly experiences from the front end to the back end.
+            </p>
           </div>
         </motion.div>
 
-        {/* Right Cards */}
-        <div className="space-y-6">
-          {features.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.15,
-              }}
-              whileHover={{
-                y: -8,
-                scale: 1.02,
-              }}
-              className="relative overflow-hidden rounded-[2rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-7 shadow-[0_8px_32px_rgba(0,0,0,0.35)] hover:border-blue-400/40 hover:shadow-[0_0_40px_rgba(59,130,246,0.25)] transition-all duration-500"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-cyan-500/5 opacity-0 hover:opacity-100 transition-opacity duration-500" />
+        {/* 2. Programming Journey Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+        >
+          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-cyan-500/10 blur-[100px]" />
+          <div className="relative z-10">
+            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+              <FiCode className="w-7 h-7 text-blue-400" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              My Programming Journey
+            </h3>
+            <p className="text-gray-300 leading-8">
+              My journey officially started with <span className="text-blue-400 font-semibold">Programming Hero</span>. From there, I mastered <span className="text-blue-400 font-semibold">HTML, CSS, Tailwind CSS, JavaScript, and TypeScript</span>, and advanced into <span className="text-blue-400 font-semibold">React and Next.js</span>. On the backend, I work with <span className="text-blue-400 font-semibold">Node.js, Express.js, and MongoDB</span>, tracked via <span className="text-blue-400 font-semibold">GitHub</span>.
+            </p>
+          </div>
+        </motion.div>
 
-              <div className="relative z-10 flex gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
-                  {item.icon}
-                </div>
+        {/* 3. Work I Enjoy Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+        >
+          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-blue-500/10 blur-[100px]" />
+          <div className="relative z-10">
+            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+              <FiTarget className="w-7 h-7 text-blue-400" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              What I Love Building
+            </h3>
+            <p className="text-gray-300 leading-8">
+              I genuinely enjoy solving real-world problems through code. My favorite projects involve building modern, scalable websites and full-featured <span className="text-blue-400 font-semibold">e-commerce platforms</span> that deliver smooth performance.
+            </p>
+          </div>
+        </motion.div>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-white mb-3">
-                    {item.title}
-                  </h4>
+        {/* 4. Hobbies & Personality Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+        >
+          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-cyan-500/10 blur-[100px]" />
+          <div className="relative z-10">
+            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+              <FiActivity className="w-7 h-7 text-blue-400" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Hobbies & Interests
+            </h3>
+            <p className="text-gray-300 leading-8">
+              When I’m not coding or pushing commits, you can find me <span className="text-blue-400 font-semibold">playing or watching football</span> or going out for a refreshing <span className="text-blue-400 font-semibold">cycling</span> session. I bring that same focus and teamwork into my development work!
+            </p>
+          </div>
+        </motion.div>
 
-                  <p className="text-gray-400 leading-7">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

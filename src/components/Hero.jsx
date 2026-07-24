@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { spaceGrotesk } from "@/lib/fonts";
 
 // Simple typewriter that cycles through a list of roles
 function Typewriter({ words, typingSpeed = 90, deletingSpeed = 45, pause = 1500 }) {
@@ -56,7 +57,7 @@ export function Hero({ socialLinks }) {
             Hello, I'm
           </span>
 
-          <h1 className="hero-title text-3xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+          <h1 className={`${spaceGrotesk.className} text-3xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]`} >
             Dulal Ahmed
           </h1>
 
@@ -72,10 +73,9 @@ export function Hero({ socialLinks }) {
           </h2>
 
           <p className="hero-desc text-gray-300 max-w-xl text-sm md:text-base leading-relaxed  py-5 rounded-3xl backdrop-blur-md  ">
-  I build modern full-stack web applications using Next.js, React, Node.js,
-  Express, and MongoDB. My focus is on creating secure authentication systems,
-  responsive user interfaces, REST APIs, admin dashboards, and seamless payment
-  integrations.
+ Full Stack Developer passionate about building scalable, secure, and user-centric web applications. Committed to writing clean code and delivering solutions that create meaningful impact.
+
+
 </p>
 
           <div className="hero-buttons flex gap-5 pt-4">

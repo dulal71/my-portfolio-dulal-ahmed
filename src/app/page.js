@@ -18,12 +18,13 @@ import { Briefcase, CheckCircle, X } from "lucide-react";
 import { FaGraduationCap } from "react-icons/fa";
 import { Heart, Layout, Wind } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+
 import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 
 const socialLinks = [
   {
@@ -348,7 +349,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden h-12 mb-8 flex items-center justify-center">
-            <span className="loader-text-span text-lg md:text-2xl font-bold tracking-[0.3em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-brand-red to-purple-500 drop-shadow-[0_0_15px_rgba(225,29,72,0.5)]">
+            <span className="loader-text-span text-lg md:text-2xl font-bold tracking-[0.3em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-700 to-purple-500 drop-shadow-[0_0_15px_rgba(225,29,72,0.5)]">
               Welcome to my portfolio
             </span>
           </div>
@@ -374,63 +375,7 @@ export default function Home() {
        <About></About> 
 
         {/* Skills */}
-        <section id="skills" className="reveal-section mb-40 pt-10 scroll-mt-20 text-center">
-          <div className="text-center mb-12">
-            <h2 className="text-brand-orange text-2xl font-bold uppercase tracking-widest drop-shadow-[0_0_10px_rgba(249,115,22,0.3)]">Skills</h2>
-            <p className="text-gray-400 text-sm mt-1">My technical arsenal</p>
-          </div>
-
-          <div className="skill-container bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] p-10 max-w-3xl mx-auto shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/5 to-brand-red/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            {/* Frontend */}
-            <h3 className="text-xs font-semibold text-gray-300 mb-8 uppercase tracking-widest bg-white/5 inline-block px-5 py-2.5 rounded-full border border-white/10 shadow-sm relative z-10">Frontend</h3>
-            <div className="flex flex-wrap justify-center gap-6 mb-12 relative z-10">
-              {[
-                { icon: <FaHtml5 className="w-7 h-7 text-[#E44D26]" />, name: 'HTML' },
-                { icon: <FaCss3Alt className="w-7 h-7 text-[#264DE4]" />, name: 'CSS' },
-                { icon: <IoLogoJavascript className="w-7 h-7 text-[#F7DF1E]" />, name: 'JavaScript' },
-                { icon: <FaReact className="w-7 h-7 text-[#61DAFB]" />, name: 'React' },
-                { icon: <SiTailwindcss className="w-7 h-7 text-[#38B2AC]" />, name: 'Tailwind' },
-                { icon: <SiNextdotjs className="w-7 h-7 text-[#38B2AC]" />, name: 'Next.js' },
-              ].map((skill, idx) => (
-                <motion.div
-                  key={idx}
-                  whileHover={{ y: -5, scale: 1.05 }}
-                  className="skill-item flex flex-col items-center gap-3 bg-white/5  p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
-                >
-                  <div className="w-12 h-12 flex items-center justify-center drop-shadow-lg">
-                    {skill.icon}
-                  </div>
-                  <span className="text-xs font-bold text-gray-400">{skill.name}</span>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Backend & Tools */}
-            <h3 className="text-xs font-semibold text-gray-300 mb-8 uppercase tracking-widest bg-white/5 inline-block px-5 py-2.5 rounded-full border border-white/10 shadow-sm relative z-10">Backend & Database</h3>
-            <div className="flex flex-wrap justify-center gap-6 relative z-10">
-              {[
-                { icon: <FaNode className="w-7 h-7 text-[#339933]" />, name: 'Node.js' },
-                { icon: <SiMongodb className="w-7 h-7 text-[#47A248]" />, name: 'MongoDB' },
-                { icon: <SiExpress className="w-7 h-7 text-gray-300" />, name: 'Express' },
-                { icon: <FaGithub className="w-7 h-7 text-white" />, name: 'Git/GitHub' },
-
-              ].map((skill, idx) => (
-                <motion.div
-                  key={idx}
-                  whileHover={{ y: -5, scale: 1.05 }}
-                  className="skill-item flex flex-col items-center gap-3 bg-white/5 hover:bg-white/10 p-5 rounded-3xl border border-white/5 hover:border-white/20 transition-colors backdrop-blur-md shadow-lg hover:hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
-                >
-                  <div className="w-12 h-12 flex items-center justify-center drop-shadow-lg">
-                    {skill.icon}
-                  </div>
-                  <span className="text-xs font-bold text-gray-400">{skill.name}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+       <Skills></Skills>
 
         {/* Projects */}
         <section id="projects" className="reveal-section mb-40 pt-10 scroll-mt-20">
