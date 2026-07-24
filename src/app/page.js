@@ -354,7 +354,7 @@ export default function Home() {
           </div>
 
           <div className="overflow-hidden h-12 mb-8 flex items-center justify-center">
-            <span className="loader-text-span text-lg md:text-2xl font-bold tracking-[0.3em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-700 to-purple-500 drop-shadow-[0_0_15px_rgba(225,29,72,0.5)]">
+            <span className=" text-center loader-text-span text-lg md:text-2xl font-bold tracking-[0.3em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-700 to-purple-500 drop-shadow-[0_0_15px_rgba(225,29,72,0.5)]">
               Welcome to my portfolio
             </span>
           </div>
