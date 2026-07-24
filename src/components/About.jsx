@@ -1,5 +1,6 @@
 "use client";
 
+import { spaceGrotesk } from "@/lib/fonts";
 import { motion } from "framer-motion";
 import {
   FiUser,
@@ -11,130 +12,156 @@ import {
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="max-w-7xl mx-auto md:px-10 py-24"
+   <section
+  id="about"
+  className="max-w-7xl mx-auto md:px-10 py-24 relative overflow-hidden"
+>
+  {/* Ambient background glow */}
+  <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-blue-500/15 rounded-full blur-[120px]" />
+
+  {/* Heading */}
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7 }}
+    className="text-center mb-16 relative z-10"
+  >
+    <h2 className={`${spaceGrotesk.className} text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-widest drop-shadow-[0_0_10px_rgba(249,115,22,0.3)]`}>
+      ABOUT ME
+    </h2>
+    <div className="w-36 h-[2px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent mx-auto mt-4" />
+  </motion.div>
+
+  {/* Two-Column Layout Flow Matching the Reference Image */}
+  <div className="grid md:grid-cols-2 gap-12 relative z-10 items-start">
+    
+    {/* Left Column: WHO AM I? & Intro content */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="space-y-8"
     >
-      
-      {/* Heading */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        className="text-center mb-16"
-      >
-        <span className="inline-block px-5 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300 text-sm font-semibold tracking-widest uppercase">
-          About Me
-        </span>
-
-        <h2 className="mt-6 text-3xl md:text-5xl font-bold text-white">
-          More Than Just a Developer
-        </h2>
-
-        <p className="text-gray-400 mt-5 max-w-2xl mx-auto leading-8">
-          I'm passionate about building meaningful digital experiences that are
-          fast, reliable, and user-focused.
-        </p>
-      </motion.div>
-
-      {/* Grid container for separated sections */}
-      <div className="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 className="text-2xl font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-3">
+          WHO <span className="text-blue-400">AM</span> I?
+        </h3>
         
-        {/* 1. Introduction Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
-        >
-          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-blue-500/10 blur-[100px]" />
-          <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-              <FiUser className="w-7 h-7 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Hello, I'm Dulal Ahmed
-            </h3>
-            <p className="text-gray-300 leading-8">
-              I'm a dedicated{" "}
-              <span className="text-blue-400 font-semibold">
-                Full Stack / MERN Developer
-              </span>{" "}
-              who loves crafting modern web applications. I specialize in building smooth, user-friendly experiences from the front end to the back end.
-            </p>
-          </div>
-        </motion.div>
+        <p className="text-gray-300 leading-8 mb-6">
+          Hello, I'm <span className="text-blue-400 font-semibold">Dulal Ahmed</span>. I'm a dedicated <span className="text-blue-400 font-semibold">Full Stack / MERN Developer</span> who loves crafting modern web applications and building smooth, user-friendly experiences from front to back.
+        </p>
 
-        {/* 2. Programming Journey Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
-        >
-          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-cyan-500/10 blur-[100px]" />
-          <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-              <FiCode className="w-7 h-7 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              My Programming Journey
-            </h3>
-            <p className="text-gray-300 leading-8">
-              My journey officially started with <span className="text-blue-400 font-semibold">Programming Hero</span>. From there, I mastered <span className="text-blue-400 font-semibold">HTML, CSS, Tailwind CSS, JavaScript, and TypeScript</span>, and advanced into <span className="text-blue-400 font-semibold">React and Next.js</span>. On the backend, I work with <span className="text-blue-400 font-semibold">Node.js, Express.js, and MongoDB</span>, tracked via <span className="text-blue-400 font-semibold">GitHub</span>.
-            </p>
-          </div>
-        </motion.div>
+        <p className="text-gray-400 leading-8">
+          When I’m not coding or pushing commits, you can find me playing or watching football or going out for a refreshing cycling session. I bring that same focus and teamwork into my development work!
+        </p>
+      </div>
 
-        {/* 3. Work I Enjoy Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+      {/* Download CV / Action Button */}
+      <div className="pt-2">
+        <a
+          href="#contact"
+          className="inline-block bg-[#222222] hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)] transition-all duration-300 uppercase tracking-widest text-xs"
         >
-          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-blue-500/10 blur-[100px]" />
-          <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-              <FiTarget className="w-7 h-7 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              What I Love Building
-            </h3>
-            <p className="text-gray-300 leading-8">
-              I genuinely enjoy solving real-world problems through code. My favorite projects involve building modern, scalable websites and full-featured <span className="text-blue-400 font-semibold">e-commerce platforms</span> that deliver smooth performance.
-            </p>
-          </div>
-        </motion.div>
+          Download My CV
+        </a>
+      </div>
+    </motion.div>
 
-        {/* 4. Hobbies & Personality Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-6 md:p-8 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
-        >
-          <div className="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-cyan-500/10 blur-[100px]" />
-          <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
-              <FiActivity className="w-7 h-7 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Hobbies & Interests
-            </h3>
-            <p className="text-gray-300 leading-8">
-              When I’m not coding or pushing commits, you can find me <span className="text-blue-400 font-semibold">playing or watching football</span> or going out for a refreshing <span className="text-blue-400 font-semibold">cycling</span> session. I bring that same focus and teamwork into my development work!
-            </p>
+    {/* Right Column: EXPERT IN & Progress Bars / Skill breakdown */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="space-y-6"
+    >
+      <div>
+        <h3 className="text-2xl font-bold text-white uppercase tracking-wider mb-6">
+          EXPERT <span className="text-blue-400">IN</span>
+        </h3>
+        <p className="text-gray-400 text-sm leading-7 mb-8">
+My journey started with Programming Hero as a beginner, exploring both frontend and backend development to build my skills step by step.
+        </p>
+      </div>
+
+      {/* Progress Bar Items */}
+      <div className="space-y-6">
+        
+        {/* Skill 1: React & Next.js */}
+        <div>
+          <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
+            <span>React & Next.js</span>
+            <span className="text-blue-400">90%</span>
           </div>
-        </motion.div>
+          <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '90%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
+            />
+          </div>
+        </div>
+
+        {/* Skill 2: JavaScript / TypeScript */}
+        <div>
+          <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
+            <span>JavaScript & TypeScript</span>
+            <span className="text-blue-400">85%</span>
+          </div>
+          <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '85%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
+            />
+          </div>
+        </div>
+
+        {/* Skill 3: Tailwind CSS / HTML */}
+        <div>
+          <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
+            <span>Tailwind CSS & UI Design</span>
+            <span className="text-blue-400">95%</span>
+          </div>
+          <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '95%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
+            />
+          </div>
+        </div>
+
+        {/* Skill 4: Node.js & MongoDB */}
+        <div>
+          <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
+            <span>Node.js & MongoDB</span>
+            <span className="text-blue-400">75%</span>
+          </div>
+          <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '75%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
+            />
+          </div>
+        </div>
 
       </div>
-    </section>
+    </motion.div>
+
+  </div>
+</section>
   );
 };
 

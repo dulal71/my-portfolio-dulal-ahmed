@@ -47,8 +47,7 @@ export function Hero({ socialLinks }) {
       className="relative mb-40 max-w-6xl mx-auto  py-16 rounded-[2.5rem]  backdrop-blur-sm  "
     >
       {/* Ambient blue glow blobs */}
-      <div className="pointer-events-none absolute -top-20 -left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
-       <div className="pointer-events-none absolute -bottom-20 -right-20 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl" />
+       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-blue-500/15 rounded-full blur-[120px]" />
 
       <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* LEFT: Content */}
