@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLenis } from "lenis/react";
 
-import { FaAtom, FaCss3Alt, FaGithub, FaHtml5, FaNode, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAtom, FaCss3Alt, FaFacebook, FaGithub, FaHtml5, FaNode, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiExpress, SiPostman, SiNextdotjs } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FcGraduationCap } from "react-icons/fc";
@@ -28,6 +28,10 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 
 const socialLinks = [
+  {
+    icon: FaFacebook,
+    url: "https://www.facebook.com/share/19U8oVQC7p/"
+  },
   {
     icon: FaGithub,
     url: "https://github.com/dulal71"
@@ -370,7 +374,7 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto px-6 pt-48 pb-24 relative z-10 overflow-hidden">
         {/* Hero */}
-        <Hero socialLinks={socialLinks}></Hero>
+        <Hero></Hero>
 
         {/* About Me */}
        <About></About> 

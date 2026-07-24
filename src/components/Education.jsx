@@ -50,7 +50,7 @@ const Education = () => {
                 <div className="timeline-dot flex items-center justify-center w-8 h-8 md:left-[-1px] left-[-32px] top-4 group-hover:scale-110 transition-transform z-10 bg-transparent shadow-none">
                   {edu.icon}
                 </div>
-                <div className="timeline-content bg-white/5 backdrop-blur-2xl p-8 rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] relative overflow-hidden transition-colors">
+                <div className="timeline-content bg-white/5 backdrop-blur-2xl p-5  md:p-8 rounded-[2.5rem] border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] relative overflow-hidden transition-colors">
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10">
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">

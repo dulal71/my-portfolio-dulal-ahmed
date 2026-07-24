@@ -3,7 +3,22 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { spaceGrotesk } from "@/lib/fonts";
-
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+const socialLinks = [
+  {
+    icon: FaFacebook,
+    url: "https://www.facebook.com/share/19U8oVQC7p/"
+  },
+  {
+    icon: FaGithub,
+    url: "https://github.com/dulal71"
+  },
+  {
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/in/dulalahmed2026"
+  },
+  
+];
 // Simple typewriter that cycles through a list of roles
 function Typewriter({ words, typingSpeed = 90, deletingSpeed = 45, pause = 1500 }) {
   const [index, setIndex] = useState(0);
@@ -40,7 +55,7 @@ function Typewriter({ words, typingSpeed = 90, deletingSpeed = 45, pause = 1500 
   );
 }
 
-export function Hero({ socialLinks }) {
+export function Hero() {
   return (
     <section
       id="home"
@@ -71,7 +86,7 @@ export function Hero({ socialLinks }) {
 />
           </h2>
 
-          <p className="hero-desc text-gray-300 max-w-xl text-sm md:text-base leading-relaxed  py-5 rounded-3xl backdrop-blur-md  ">
+          <p className=" text-gray-300 max-w-xl text-sm md:text-base leading-relaxed py-3 px-2 md:py-5 rounded-3xl backdrop-blur-md  ">
  Full Stack Developer passionate about building scalable, secure, and user-centric web applications. Committed to writing clean code and delivering solutions that create meaningful impact.
 
 

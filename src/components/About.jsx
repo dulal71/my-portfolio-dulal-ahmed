@@ -2,19 +2,13 @@
 
 import { spaceGrotesk } from "@/lib/fonts";
 import { motion } from "framer-motion";
-import {
-  FiUser,
-  FiCode,
-  FiTarget,
-  FiTrendingUp,
-  FiActivity,
-} from "react-icons/fi";
+
 
 const About = () => {
   return (
    <section
   id="about"
-  className="max-w-7xl mx-auto md:px-10 py-24 relative overflow-hidden"
+  className="max-w-7xl mx-auto md:px-10 py-6 relative overflow-hidden"
 >
   {/* Ambient background glow */}
   <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-blue-500/15 rounded-full blur-[120px]" />
@@ -34,7 +28,7 @@ const About = () => {
   </motion.div>
 
   {/* Two-Column Layout Flow Matching the Reference Image */}
-  <div className="grid md:grid-cols-2 gap-12 relative z-10 items-start">
+  <div className="grid md:grid-cols-2 gap-12 relative z-10 items-start px-2">
     
     {/* Left Column: WHO AM I? & Intro content */}
     <motion.div
@@ -87,18 +81,18 @@ My journey started with Programming Hero as a beginner, exploring both frontend 
       </div>
 
       {/* Progress Bar Items */}
-      <div className="space-y-6">
+      <div className="space-y-6 px-2 md:px-0">
         
         {/* Skill 1: React & Next.js */}
         <div>
           <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
             <span>React & Next.js</span>
-            <span className="text-blue-400">90%</span>
+            <span className="text-blue-400">80%</span>
           </div>
           <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
             <motion.div
               initial={{ width: 0 }}
-              whileInView={{ width: '90%' }}
+              whileInView={{ width: '80%' }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
@@ -110,12 +104,12 @@ My journey started with Programming Hero as a beginner, exploring both frontend 
         <div>
           <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
             <span>JavaScript & TypeScript</span>
-            <span className="text-blue-400">85%</span>
+            <span className="text-blue-400">80%</span>
           </div>
           <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
             <motion.div
               initial={{ width: 0 }}
-              whileInView={{ width: '85%' }}
+              whileInView={{ width: '80%' }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
               className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
@@ -127,12 +121,12 @@ My journey started with Programming Hero as a beginner, exploring both frontend 
         <div>
           <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
             <span>Tailwind CSS & UI Design</span>
-            <span className="text-blue-400">95%</span>
+            <span className="text-blue-400">90%</span>
           </div>
           <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
             <motion.div
               initial={{ width: 0 }}
-              whileInView={{ width: '95%' }}
+              whileInView={{ width: '90%' }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
               className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
@@ -144,12 +138,12 @@ My journey started with Programming Hero as a beginner, exploring both frontend 
         <div>
           <div className="flex justify-between text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
             <span>Node.js & MongoDB</span>
-            <span className="text-blue-400">75%</span>
+            <span className="text-blue-400">70%</span>
           </div>
           <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden p-[1px] border border-white/5">
             <motion.div
               initial={{ width: 0 }}
-              whileInView={{ width: '75%' }}
+              whileInView={{ width: '70%' }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"
