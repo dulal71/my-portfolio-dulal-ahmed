@@ -180,14 +180,11 @@ const lenis = useLenis();
       {/* Unique Cinematic Loader Overlay */}
       <div className="loader-overlay fixed inset-0 z-[99999] bg-[#030303] flex flex-col items-center justify-center overflow-hidden">
 
-        {/* Huge Background Text */}
-        <div className="loader-bg-text absolute opacity-5 whitespace-nowrap text-[20vw] font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 pointer-events-none select-none">
-          PORTFOLIO
-        </div>
+       
 
         {/* Foreground Content */}
         <div className="relative z-10 flex flex-col items-center">
-          <div className="loader-counter text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-linear-to-br from-brand-blue via-brand-blue-600 to-blue-900 drop-shadow-[0_0_30px_rgba(225,29,72,0.4)] mb-2">
+          <div className="loader-counter text-5xl md:text-9xl font-black text-blue-800 drop-shadow-[0_0_30px_rgba(225,29,72,0.4)] mb-2">
             0%
           </div>
 
