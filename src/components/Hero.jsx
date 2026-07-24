@@ -43,7 +43,7 @@ export function Hero({ socialLinks }) {
   return (
     <section
       id="home"
-      className="relative mb-40 max-w-6xl mx-auto px-6 py-16 rounded-[2.5rem]  backdrop-blur-sm  "
+      className="relative mb-40 max-w-6xl mx-auto  py-16 rounded-[2.5rem]  backdrop-blur-sm  "
     >
       {/* Ambient blue glow blobs */}
       <div className="pointer-events-none absolute -top-20 -left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl" />
@@ -56,7 +56,7 @@ export function Hero({ socialLinks }) {
             Hello, I'm
           </span>
 
-          <h1 className="hero-title text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+          <h1 className="hero-title text-3xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
             Dulal Ahmed
           </h1>
 
@@ -124,9 +124,7 @@ export function Hero({ socialLinks }) {
           className="order-1 lg:order-2 flex justify-center"
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80">
-            {/* Glow behind image */}
-            {/* <div className="absolute inset-0 rounded-full bg-blue-500/30 blur-3xl" />
-            <div className="absolute inset-0 rounded-full bg-blue-600/20 blur-2xl animate-pulse" /> */}
+           
 
             {/* Image frame */}
             <div className="relative w-full h-full rounded-full overflow-hidden border border-white/20 bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(59,130,246,0.4)]">

@@ -33,7 +33,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto px-6 md:px-10 py-24"
+      className="max-w-7xl mx-auto  md:px-10 py-24"
     >
       {/* Heading */}
       <motion.div
@@ -47,7 +47,7 @@ const About = () => {
           About Me
         </span>
 
-        <h2 className="mt-6 text-4xl md:text-5xl font-bold text-white">
+        <h2 className="mt-6 text-3xl md:text-5xl font-bold text-white">
           More Than Just a Developer
         </h2>
 
@@ -65,7 +65,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
+          className="relative overflow-hidden rounded-[2.5rem] border border-blue-500/20 bg-white/5 backdrop-blur-2xl p-5 md:p-10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
         >
           {/* Background Glow */}
           <div className="absolute -top-28 -right-24 w-64 h-64 rounded-full bg-blue-500/20 blur-[120px]" />
