@@ -55,7 +55,7 @@ const About = () => {
       {/* Download CV / Action Button */}
       <div className="pt-2">
         <a
-          href="#contact"
+      href="/Dulal Ahmed Full Stack Developer Resume .pdf"
           className="inline-block bg-[#222222] hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)] transition-all duration-300 uppercase tracking-widest text-xs"
         >
           Download My CV

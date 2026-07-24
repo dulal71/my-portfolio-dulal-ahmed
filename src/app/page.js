@@ -184,7 +184,7 @@ const lenis = useLenis();
 
         {/* Foreground Content */}
         <div className="relative z-10 flex flex-col items-center">
-          <div className="loader-counter text-5xl md:text-9xl font-black text-blue-900 mb-2">
+          <div className="loader-counter text-5xl md:text-9xl font-black text-blue-700 mb-2">
             0%
           </div>
 
