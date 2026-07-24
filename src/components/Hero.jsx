@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { spaceGrotesk } from "@/lib/fonts";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-const socialLinks = [
+export const socialLinks = [
   {
     icon: FaFacebook,
     url: "https://www.facebook.com/share/19U8oVQC7p/"
@@ -96,7 +96,7 @@ export function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/dulal-ahmed-fullstack-resume.pdf"
+              href="/Dulal Ahmed Full Stack Developer Resume .pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-red/80 backdrop-blur-xl hover:bg-blue-500 text-white px-8 py-3.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,1)] border border-white/20"
